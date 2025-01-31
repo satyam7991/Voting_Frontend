@@ -16,7 +16,7 @@ const Vote = () => {
     const updateScienceCount = scienceCounter + 1;
     setScienceCount(updateScienceCount);
     try {
-      axios.post("http://localhost:3001/Science", {
+      axios.post("https://votingapp-6fc1.onrender.com/Science", {
         scienceCount: updateScienceCount,
       });
       toast.success("Vote successfully");
@@ -32,7 +32,7 @@ const Vote = () => {
     const updateEnglishCount = englishCounter + 1;
     setEnglishCount(updateEnglishCount);
     try {
-      axios.post("http://localhost:3001/English", {
+      axios.post("https://votingapp-6fc1.onrender.com/English", {
         englishCount: updateEnglishCount,
       });
       toast.success("Vote successfully");
@@ -50,7 +50,7 @@ const Vote = () => {
     const updateCount = mathCounter + 1;
     setMathCount(updateCount);
     try {
-      axios.post("http://localhost:3001/Math", { mathCount: updateCount });
+      axios.post("https://votingapp-6fc1.onrender.com/Math", { mathCount: updateCount });
       toast.success("Vote successfully");
       setVoted(true);
       console.log(updateCount);

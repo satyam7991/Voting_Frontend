@@ -9,7 +9,7 @@ const Result = () => {
   const[englishData,setEnglishData]=useState(0)
   const[scienceData,setScienceData]=useState(0)
   useEffect(() => {
-axios.get('http://localhost:3001/Math')
+axios.get('https://votingapp-6fc1.onrender.com/Math')
 .then(resp=>{
   
   console.log(resp)
@@ -18,7 +18,7 @@ axios.get('http://localhost:3001/Math')
 })
   },[])
   useEffect(() => {
-    axios.get('http://localhost:3001/Science')
+    axios.get('https://votingapp-6fc1.onrender.com/Science')
     .then(resp=>{
       
       console.log(resp)
@@ -27,7 +27,7 @@ axios.get('http://localhost:3001/Math')
     })
       },[])
   useEffect(() => {
-axios.get('http://localhost:3001/English')
+axios.get('https://votingapp-6fc1.onrender.com/English')
 .then(resp=>{
   
   console.log(resp)
